@@ -32,7 +32,7 @@ const Products = () => {
     e.preventDefault();
 
     try {
-        const apiUrl = 'http://localhost:9090/productservice/addproduct';
+        const apiUrl = 'http://localhost:8082/productservice/addproduct';
         const response = await axios.post(apiUrl, formData);
         console.log('API Response:', response.data);
   

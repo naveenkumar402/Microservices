@@ -23,7 +23,7 @@ const Customers = () => {
         e.preventDefault();
     
         try {
-          const apiUrl = 'http://localhost:9090/customerservice/registercustomer';
+          const apiUrl = 'http://localhost:8081/customerservice/registercustomer';
           const response = await axios.post(apiUrl, formData);
           console.log('API Response:', response.data);
     
